@@ -1,0 +1,4 @@
+title: BusTypes
+modelClass: Dojo\Pukju\Models\BusType
+toolbar:
+    buttons: reorder_toolbar

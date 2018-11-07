@@ -1,0 +1,10 @@
+name: Drivers
+form: $/dojo/pukju/models/driver/fields.yaml
+modelClass: Dojo\Pukju\Models\Driver
+defaultRedirect: dojo/pukju/drivers
+create:
+    redirect: 'dojo/pukju/drivers/update/:id'
+    redirectClose: dojo/pukju/drivers
+update:
+    redirect: dojo/pukju/drivers
+    redirectClose: dojo/pukju/drivers

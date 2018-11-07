@@ -1,0 +1,10 @@
+name: BusTypes
+form: $/dojo/pukju/models/bustype/fields.yaml
+modelClass: Dojo\Pukju\Models\BusType
+defaultRedirect: dojo/pukju/bustypes
+create:
+    redirect: 'dojo/pukju/bustypes/update/:id'
+    redirectClose: dojo/pukju/bustypes
+update:
+    redirect: dojo/pukju/bustypes
+    redirectClose: dojo/pukju/bustypes

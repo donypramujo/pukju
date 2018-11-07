@@ -1,0 +1,11 @@
+.DS_Store
+*.log
+/.vscode
+/bootstrap
+/config
+/modules
+/storage
+/vendor
+.htaccess
+artisan
+index.php

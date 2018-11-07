@@ -1,0 +1,25 @@
+columns:
+    id:
+        label: 'dojo.pukju::lang.driver.id'
+        type: number
+        searchable: true
+        sortable: true
+    name:
+        label: 'dojo.pukju::lang.driver.name'
+        type: text
+        searchable: true
+        sortable: true
+    birth_of_date:
+        label: 'dojo.pukju::lang.driver.birth_of_date'
+        type: date
+        searchable: true
+        sortable: true
+    email:
+        label: 'dojo.pukju::lang.driver.email'
+        type: text
+        searchable: true
+    phone_number:
+        label: 'dojo.pukju::lang.driver.phone_number'
+        type: text
+        searchable: true
+

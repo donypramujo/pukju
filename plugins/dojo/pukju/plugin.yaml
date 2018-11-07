@@ -1,0 +1,23 @@
+plugin:
+    name: 'dojo.pukju::lang.plugin.name'
+    description: 'dojo.pukju::lang.plugin.description'
+    author: 'Dony Pramujo'
+    icon: oc-icon-bus
+    homepage: ''
+permissions:
+    access_drivers:
+        tab: 'dojo.pukju::lang.master.tab'
+        label: 'dojo.pukju::lang.master.access_drivers'
+    access_bus_types:
+        tab: 'dojo.pukju::lang.master.tab'
+        label: 'dojo.pukju::lang.master.access_bus_types'
+navigation:
+    master:
+        label: 'dojo.pukju::lang.master.tab'
+        url: dojo/pukju/drivers
+        icon: icon-life-ring
+        sideMenu:
+            bus_types:
+                label: 'dojo.pukju::lang.bus_type.singular'
+                url: dojo/pukju/bustypes
+                icon: icon-bus

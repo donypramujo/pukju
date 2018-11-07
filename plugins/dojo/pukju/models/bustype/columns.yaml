@@ -1,0 +1,11 @@
+columns:
+    id:
+        label: 'dojo.pukju::lang.bus_type.id'
+        type: number
+        searchable: true
+        sortable: true
+    name:
+        label: 'dojo.pukju::lang.bus_type.name'
+        type: text
+        searchable: true
+        sortable: true

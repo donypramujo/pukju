@@ -1,0 +1,24 @@
+fields:
+    name:
+        label: 'dojo.pukju::lang.driver.name'
+        span: full
+        placeholder: 'dojo.pukju::lang.driver.name'
+        required: 1
+        type: text
+    birth_of_date:
+        label: 'dojo.pukju::lang.driver.birth_of_date'
+        mode: date
+        span: left
+        required: 1
+        type: datepicker
+    email:
+        label: 'dojo.pukju::lang.driver.email'
+        span: left
+        placeholder: 'dojo.pukju::lang.driver.email'
+        type: text
+    phone_number:
+        label: 'dojo.pukju::lang.driver.phone_number'
+        span: left
+        placeholder: 'dojo.pukju::lang.driver.phone_number'
+        required: 1
+        type: text
