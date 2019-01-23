@@ -1,0 +1,28 @@
+columns:
+    id:
+        label: 'dojo.pukju::lang.customer.id'
+        type: number
+        searchable: true
+        sortable: true
+    name:
+        label: 'dojo.pukju::lang.customer.name'
+        type: text
+        searchable: true
+        sortable: true
+    phone_number:
+        label: 'dojo.pukju::lang.customer.phone_number'
+        type: text
+        searchable: true
+        sortable: true
+    birth_of_date:
+        label: 'dojo.pukju::lang.customer.birth_of_date'
+        type: date
+        searchable: true
+        sortable: true
+    email:
+        label: 'dojo.pukju::lang.customer.email'
+        type: text
+    address:
+        label: 'dojo.pukju::lang.customer.address'
+        type: text
+

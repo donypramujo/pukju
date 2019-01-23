@@ -1,0 +1,11 @@
+columns:
+    id:
+        label: 'dojo.pukju::lang.destination.id'
+        type: number
+        searchable: true
+        sortable: true
+    name:
+        label: 'dojo.pukju::lang.destination.name'
+        type: text
+        searchable: true
+        sortable: true

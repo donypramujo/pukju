@@ -1,0 +1,16 @@
+fields:
+    bus_type:
+        label: 'dojo.pukju::lang.bus_type.name'
+        nameFrom: name
+        descriptionFrom: description
+        prompt: 'dojo.pukju::lang.bus_type.record_finder'
+        list: $/dojo/pukju/models/viewsbus/columns.yaml
+        span: full
+        required: 1
+        type: recordfinder
+    bus_order_count:
+        label: 'dojo.pukju::lang.bus_type.order_count'
+        span: full
+        placeholder: 'dojo.pukju::lang.bus_type.order_count'
+        required: 1
+        type: number

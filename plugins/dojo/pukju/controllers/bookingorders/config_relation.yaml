@@ -1,0 +1,26 @@
+customer:
+    label: 'dojo.pukju::lang.customer.singular'
+    view:
+        form: $/dojo/pukju/models/customer/fields.yaml
+        toolbarButtons: link|unlink
+        showSearch: true
+    manage:
+        form: $/dojo/pukju/models/customer/fields.yaml
+        list: $/dojo/pukju/models/customer/columns.yaml
+        showSearch: true
+buses:
+    label: 'dojo.pukju::lang.bus.singular'
+    view:
+        list: $/dojo/pukju/models/bookingorderbus/columns.yaml
+        toolbarButtons: create|delete
+    manage:
+        form: $/dojo/pukju/models/bookingorderbus/fields.yaml
+        recordsPerPage: 20
+charges:
+    label: 'dojo.pukju::lang.charge.singular'
+    view:
+        list: $/dojo/pukju/models/charge/columns.yaml
+        toolbarButtons: create|delete
+    manage:
+        form: $/dojo/pukju/models/charge/fields.yaml
+        recordsPerPage: 20

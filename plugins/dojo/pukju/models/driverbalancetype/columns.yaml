@@ -1,0 +1,14 @@
+columns:
+    id:
+        label: 'dojo.pukju::lang.driver_balance_type.id'
+        type: number
+        searchable: true
+        sortable: true
+    description:
+        label: 'dojo.pukju::lang.driver_balance_type.description'
+        type: text
+        searchable: true
+    type:
+        label: 'dojo.pukju::lang.driver_balance_type.type'
+        type: text
+        sortable: true

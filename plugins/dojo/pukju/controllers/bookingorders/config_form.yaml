@@ -1,0 +1,10 @@
+name: 'dojo.pukju::lang.bo.singular'
+modelClass: Dojo\Pukju\Models\BookingOrder
+form: $/dojo/pukju/models/bookingorder/fields.yaml
+defaultRedirect: dojo/pukju/bookingorders
+create:
+    redirect: 'dojo/pukju/bookingorders/update/:id'
+    redirectClose: dojo/pukju/bookingorders
+update:
+    redirect: dojo/pukju/bookingorders
+    redirectClose: dojo/pukju/bookingorders

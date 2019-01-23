@@ -1,0 +1,33 @@
+columns:
+    id:
+        label: 'dojo.pukju::lang.bo.id'
+        type: number
+        searchable: true
+        sortable: true
+    event_name:
+        label: 'dojo.pukju::lang.bo.event_name'
+        type: text
+        searchable: true
+    'destination[name]':
+        label: 'dojo.pukju::lang.destination.singular'
+        type: text
+        searchable: true
+    'customer[name]':
+        label: 'dojo.pukju::lang.customer.singular'
+        type: text
+        searchable: true
+    'customer[phone_number]':
+        label: 'dojo.pukju::lang.customer.phone_number'
+        type: text
+        searchable: true
+    from_date:
+        label: 'dojo.pukju::lang.bo.from_date'
+        type: date
+        searchable: true
+        sortable: true
+    to_date:
+        label: 'dojo.pukju::lang.bo.to_date'
+        type: date
+        searchable: true
+        sortable: true
+

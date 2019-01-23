@@ -1,0 +1,13 @@
+fields:
+    description:
+        label: 'dojo.pukju::lang.driver_balance_type.description'
+        span: left
+        placeholder: 'dojo.pukju::lang.driver_balance_type.description'
+        type: text
+    type:
+        label: 'dojo.pukju::lang.driver_balance_type.type'
+        options:
+            C: Credit
+            D: Debet
+        span: left
+        type: radio

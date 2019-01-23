@@ -1,0 +1,11 @@
+fields:
+    description:
+        label: 'dojo.pukju::lang.charge.description'
+        span: left
+        placeholder: 'dojo.pukju::lang.charge.description'
+        type: text
+    amount:
+        label: 'dojo.pukju::lang.charge.amount'
+        span: left
+        placeholder: 'dojo.pukju::lang.charge.amount'
+        type: number

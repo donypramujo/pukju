@@ -1,0 +1,10 @@
+name: Buses
+form: $/dojo/pukju/models/bus/fields.yaml
+modelClass: Dojo\Pukju\Models\Bus
+defaultRedirect: dojo/pukju/buses
+create:
+    redirect: 'dojo/pukju/buses/update/:id'
+    redirectClose: dojo/pukju/buses
+update:
+    redirect: dojo/pukju/buses
+    redirectClose: dojo/pukju/buses

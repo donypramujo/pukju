@@ -1,0 +1,10 @@
+name: Customers
+form: $/dojo/pukju/models/customer/fields.yaml
+modelClass: Dojo\Pukju\Models\Customer
+defaultRedirect: dojo/pukju/customers
+create:
+    redirect: 'dojo/pukju/customers/update/:id'
+    redirectClose: dojo/pukju/customers
+update:
+    redirect: dojo/pukju/customers
+    redirectClose: dojo/pukju/customers

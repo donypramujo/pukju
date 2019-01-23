@@ -1,0 +1,10 @@
+name: BookingOrderBuses
+form: $/dojo/pukju/models/bookingorderbus/fields.yaml
+modelClass: Dojo\Pukju\Models\BookingOrderBus
+defaultRedirect: dojo/pukju/bookingorderbuses
+create:
+    redirect: 'dojo/pukju/bookingorderbuses/update/:id'
+    redirectClose: dojo/pukju/bookingorderbuses
+update:
+    redirect: dojo/pukju/bookingorderbuses
+    redirectClose: dojo/pukju/bookingorderbuses

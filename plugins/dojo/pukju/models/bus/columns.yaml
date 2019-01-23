@@ -1,0 +1,16 @@
+columns:
+    police_number:
+        label: 'dojo.pukju::lang.bus.police_number'
+        type: text
+        searchable: true
+        sortable: true
+    code:
+        label: 'dojo.pukju::lang.bus.code'
+        type: text
+        searchable: true
+        sortable: true
+    bus_type:
+        label: 'dojo.pukju::lang.bus_type.singular'
+        relation: bus_type
+        select: name
+        searchable: true

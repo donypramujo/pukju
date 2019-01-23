@@ -1,0 +1,4 @@
+title: Destinations
+modelClass: Dojo\Pukju\Models\Destination
+toolbar:
+    buttons: reorder_toolbar

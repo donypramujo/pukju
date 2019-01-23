@@ -1,0 +1,10 @@
+columns:
+    description:
+        label: 'dojo.pukju::lang.charge.description'
+        type: text
+        searchable: true
+        sortable: true
+    amount:
+        label: 'dojo.pukju::lang.charge.amount'
+        type: number
+        sortable: true

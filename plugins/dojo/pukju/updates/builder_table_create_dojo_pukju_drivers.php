@@ -11,13 +11,14 @@ class BuilderTableCreateDojoPukjuDrivers extends Migration
         {
             $table->engine = 'InnoDB';
             $table->increments('id')->unsigned();
+            $table->string('name', 100);
+            $table->string('phone_number', 15);
+            $table->date('birth_of_date');
+            $table->text('address');
             $table->timestamp('created_at')->nullable();
             $table->timestamp('updated_at')->nullable();
             $table->timestamp('deleted_at')->nullable();
-            $table->string('name', 100);
-            $table->string('phone_number', 15);
-            $table->string('email', 100);
-            $table->date('birth_of_date');
+           
         });
     }
     

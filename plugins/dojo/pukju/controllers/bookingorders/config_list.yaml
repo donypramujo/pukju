@@ -1,0 +1,12 @@
+title: 'dojo.pukju::lang.bo.plural'
+modelClass: Dojo\Pukju\Models\BookingOrder
+list: $/dojo/pukju/models/bookingorder/columns.yaml
+recordUrl: 'dojo/pukju/bookingorders/update/:id'
+noRecordsMessage: 'backend::lang.list.no_records'
+recordsPerPage: 20
+showSetup: true
+showCheckboxes: true
+toolbar:
+    buttons: list_toolbar
+    search:
+        prompt: 'backend::lang.list.search_prompt'

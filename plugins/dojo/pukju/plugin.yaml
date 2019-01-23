@@ -11,13 +11,74 @@ permissions:
     access_bus_types:
         tab: 'dojo.pukju::lang.master.tab'
         label: 'dojo.pukju::lang.master.access_bus_types'
+    access_customers:
+        tab: 'dojo.pukju::lang.master.tab'
+        label: 'dojo.pukju::lang.master.access_customers'
+    access_buses:
+        tab: 'dojo.pukju::lang.master.tab'
+        label: 'dojo.pukju::lang.master.access_buses'
+    access_destinations:
+        tab: 'dojo.pukju::lang.master.tab'
+        label: 'dojo.pukju::lang.master.access_destinations'
+    access_booking_orders:
+        tab: 'dojo.pukju::lang.trx.tab'
+        label: 'dojo.pukju::lang.master.access_booking_orders'
+    access_travel_assignments:
+        tab: 'dojo.pukju::lang.trx.tab'
+        label: 'dojo.pukju::lang.master.access_travel_assignments'
+    access_driver_balance_types:
+        tab: 'dojo.pukju::lang.master.tab'
+        label: 'dojo.pukju::lang.master.access_driver_balance_types'
 navigation:
     master:
         label: 'dojo.pukju::lang.master.tab'
-        url: dojo/pukju/drivers
+        url: dojo/pukju/customers
         icon: icon-life-ring
         sideMenu:
+            customers:
+                label: 'dojo.pukju::lang.customer.plural'
+                url: dojo/pukju/customers
+                icon: icon-users
+                permissions:
+                    - access_customers
+            buses:
+                label: 'dojo.pukju::lang.bus.plural'
+                url: dojo/pukju/buses
+                icon: icon-bus
+                permissions:
+                    - access_buses
             bus_types:
-                label: 'dojo.pukju::lang.bus_type.singular'
+                label: 'dojo.pukju::lang.bus_type.plural'
                 url: dojo/pukju/bustypes
                 icon: icon-bus
+                permissions:
+                    - access_bus_types
+            drivers:
+                label: 'dojo.pukju::lang.driver.plural'
+                url: dojo/pukju/drivers
+                icon: icon-taxi
+            destinations:
+                label: 'dojo.pukju::lang.destination.plural'
+                url: dojo/pukju/destinations
+                icon: icon-location-arrow
+                permissions:
+                    - access_destinations
+    booking-orders:
+        label: 'dojo.pukju::lang.bo.plural'
+        url: dojo/pukju/bookingorders
+        icon: icon-repeat
+        permissions:
+            - access_booking_orders
+    travel-assignments:
+        label: 'dojo.pukju::lang.ta.plural'
+        url: /
+        icon: icon-life-ring
+    transaction:
+        label: 'dojo.pukju::lang.transaction.singular'
+        url: dojo/pukju/driverbalancetypes
+        icon: icon-life-ring
+        sideMenu:
+            driver-balances:
+                label: 'dojo.pukju::lang.driver.balances'
+                url: dojo/pukju/driverbalancetypes
+                icon: icon-sitemap

@@ -19,7 +19,7 @@ class Driver extends Model
     /**
      * @var array Monitor these attributes for changes.
      */
-    protected $revisionable = ['name', 'email', 'phone_number', 'birth_of_date','deleted_at'];
+    protected $revisionable = ['name', 'phone_number', 'birth_of_date','address','deleted_at'];
 
     public function getRevisionableUser()
     {
@@ -45,7 +45,6 @@ class Driver extends Model
      */
     public $rules = [
         'name' => 'required|between:1,100',
-        'email' => 'required|email',
         'phone_number' => 'required|numeric',
         'birth_of_date' => 'required|date'
     ];

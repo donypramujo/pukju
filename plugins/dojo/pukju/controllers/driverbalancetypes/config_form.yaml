@@ -1,0 +1,10 @@
+name: DriverBalanceTypes
+form: $/dojo/pukju/models/driverbalancetype/fields.yaml
+modelClass: Dojo\Pukju\Models\DriverBalanceType
+defaultRedirect: dojo/pukju/driverbalancetypes
+create:
+    redirect: 'dojo/pukju/driverbalancetypes/update/:id'
+    redirectClose: dojo/pukju/driverbalancetypes
+update:
+    redirect: dojo/pukju/driverbalancetypes
+    redirectClose: dojo/pukju/driverbalancetypes

@@ -9,17 +9,17 @@ columns:
         type: text
         searchable: true
         sortable: true
+    phone_number:
+        label: 'dojo.pukju::lang.driver.phone_number'
+        type: text
+        searchable: true
     birth_of_date:
         label: 'dojo.pukju::lang.driver.birth_of_date'
         type: date
         searchable: true
         sortable: true
-    email:
-        label: 'dojo.pukju::lang.driver.email'
-        type: text
-        searchable: true
-    phone_number:
-        label: 'dojo.pukju::lang.driver.phone_number'
+    address:
+        label: 'dojo.pukju::lang.driver.address'
         type: text
         searchable: true
 

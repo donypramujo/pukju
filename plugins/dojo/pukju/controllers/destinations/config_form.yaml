@@ -1,0 +1,10 @@
+name: Destinations
+form: $/dojo/pukju/models/destination/fields.yaml
+modelClass: Dojo\Pukju\Models\Destination
+defaultRedirect: dojo/pukju/destinations
+create:
+    redirect: 'dojo/pukju/destinations/update/:id'
+    redirectClose: dojo/pukju/destinations
+update:
+    redirect: dojo/pukju/destinations
+    redirectClose: dojo/pukju/destinations

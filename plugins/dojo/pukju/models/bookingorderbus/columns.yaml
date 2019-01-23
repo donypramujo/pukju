@@ -1,0 +1,11 @@
+columns:
+    bus_type_name:
+        label: 'dojo.pukju::lang.bus_type.name'
+        searchable: true
+        sortable: true
+        relation: bus_type
+        select: name
+    bus_order_count:
+        label: 'dojo.pukju::lang.bus_type.order_count'
+        type: number
+        sortable: true

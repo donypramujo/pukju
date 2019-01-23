@@ -1,0 +1,20 @@
+fields:
+    police_number:
+        label: 'dojo.pukju::lang.bus.police_number'
+        span: left
+        placeholder: 'dojo.pukju::lang.bus.police_number'
+        required: 1
+        type: text
+    code:
+        label: 'dojo.pukju::lang.bus.code'
+        span: left
+        placeholder: 'dojo.pukju::lang.bus.code'
+        required: 1
+        type: text
+    bus_type:
+        label: 'dojo.pukju::lang.bus_type.singular'
+        span: left
+        type: recordfinder
+        list: $/dojo/pukju/models/bustype/columns.yaml
+        prompt: 'dojo.pukju::lang.bus_type.record_finder'
+        nameFrom: name

@@ -1,0 +1,12 @@
+list: $/dojo/pukju/models/destination/columns.yaml
+modelClass: Dojo\Pukju\Models\Destination
+title: Destinations
+noRecordsMessage: 'backend::lang.list.no_records'
+showSetup: true
+showCheckboxes: true
+recordsPerPage: 20
+toolbar:
+    buttons: list_toolbar
+    search:
+        prompt: 'backend::lang.list.search_prompt'
+recordUrl: 'dojo/pukju/destinations/update/:id'

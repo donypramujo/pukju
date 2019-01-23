@@ -1,0 +1,74 @@
+fields:
+    event_name:
+        label: 'dojo.pukju::lang.bo.event_name'
+        span: full
+        placeholder: 'dojo.pukju::lang.bo.event_name'
+        type: text
+    customer:
+        label: 'dojo.pukju::lang.customer.singular'
+        nameFrom: name
+        descriptionFrom: email
+        prompt: 'dojo.pukju::lang.customer.record_finder'
+        list: $/dojo/pukju/models/customer/columns.yaml
+        span: full
+        required: 1
+        type: recordfinder
+    destination:
+        label: 'dojo.pukju::lang.destination.singular'
+        nameFrom: name
+        prompt: 'dojo.pukju::lang.destination.record_finder'
+        list: $/dojo/pukju/models/destination/columns.yaml
+        span: full
+        required: 1
+        type: recordfinder
+    pickup_address:
+        label: 'dojo.pukju::lang.pickup.address'
+        span: full
+        type: textarea
+tabs:
+    icons:
+        dojo.pukju::lang.bus.ordered: icon-user
+        dojo.pukju::lang.charge.per_bus: icon-group
+    fields:
+        buses:
+            span: full
+            path: field_buses
+            context:
+                - update
+                - preview
+            type: partial
+            tab: 'dojo.pukju::lang.bus.ordered'
+        charges:
+            span: full
+            path: field_charges
+            context:
+                - update
+                - preview
+            type: partial
+            tab: 'dojo.pukju::lang.charge.per_bus'
+secondaryTabs:
+    fields:
+        from_date:
+            label: 'dojo.pukju::lang.bo.from_date'
+            mode: date
+            span: left
+            type: datepicker
+            tab: Misc
+        to_date:
+            label: 'dojo.pukju::lang.bo.to_date'
+            mode: date
+            span: right
+            type: datepicker
+            tab: Misc
+        pickup_hour:
+            label: 'dojo.pukju::lang.pickup.hour'
+            mode: time
+            span: full
+            type: datepicker
+            tab: Misc
+        pickup_phone_number:
+            label: 'dojo.pukju::lang.pickup.phone_number'
+            span: full
+            placeholder: 'dojo.pukju::lang.pickup.phone_number'
+            type: text
+            tab: Misc

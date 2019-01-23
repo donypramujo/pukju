@@ -1,0 +1,10 @@
+name: Charges
+form: $/dojo/pukju/models/charge/fields.yaml
+modelClass: Dojo\Pukju\Models\Charge
+defaultRedirect: dojo/pukju/charges
+create:
+    redirect: 'dojo/pukju/charges/update/:id'
+    redirectClose: dojo/pukju/charges
+update:
+    redirect: dojo/pukju/charges
+    redirectClose: dojo/pukju/charges

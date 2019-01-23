@@ -1,8 +1,14 @@
 fields:
     name:
         label: 'dojo.pukju::lang.driver.name'
-        span: full
+        span: left
         placeholder: 'dojo.pukju::lang.driver.name'
+        required: 1
+        type: text
+    phone_number:
+        label: 'dojo.pukju::lang.driver.phone_number'
+        span: left
+        placeholder: 'dojo.pukju::lang.driver.phone_number'
         required: 1
         type: text
     birth_of_date:
@@ -11,14 +17,9 @@ fields:
         span: left
         required: 1
         type: datepicker
-    email:
-        label: 'dojo.pukju::lang.driver.email'
+    address:
+        label: 'dojo.pukju::lang.driver.address'
+        size: ''
         span: left
-        placeholder: 'dojo.pukju::lang.driver.email'
-        type: text
-    phone_number:
-        label: 'dojo.pukju::lang.driver.phone_number'
-        span: left
-        placeholder: 'dojo.pukju::lang.driver.phone_number'
-        required: 1
-        type: text
+        placeholder: 'dojo.pukju::lang.driver.address'
+        type: textarea

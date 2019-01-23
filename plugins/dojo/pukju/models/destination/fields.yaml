@@ -1,0 +1,6 @@
+fields:
+    name:
+        label: 'dojo.pukju::lang.destination.name'
+        span: auto
+        placeholder: 'dojo.pukju::lang.destination.name'
+        type: text

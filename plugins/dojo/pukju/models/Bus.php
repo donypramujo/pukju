@@ -1,0 +1,56 @@
+<?php namespace Dojo\Pukju\Models;
+
+use Model;
+use Backend\Facades\BackendAuth;
+
+/**
+ * Model
+ */
+class Bus extends Model
+{
+    use \October\Rain\Database\Traits\Validation;
+    
+    use \October\Rain\Database\Traits\SoftDelete;
+
+    use \October\Rain\Database\Traits\Revisionable;
+
+    /**
+     * @var array Monitor these attributes for changes.
+     */
+    protected $revisionable = ['name','deleted_at'];
+
+    public function getRevisionableUser()
+    {
+        return BackendAuth::getUser();
+    }
+    
+
+    protected $dates = ['deleted_at'];
+
+
+    /**
+     * @var string The database table used by the model.
+     */
+    public $table = 'dojo_pukju_buses';
+
+    /**
+     * @var array Validation rules
+     */
+    public $rules = [
+        'police_number' => 'required|between:1,10|unique:dojo_pukju_buses',
+        'code' => 'required|between:1,10|unique:dojo_pukju_buses',
+    ];
+
+    public $belongsTo = [
+        'bus_type' => 'Dojo\Pukju\Models\BusType',
+    ];
+
+        /**
+     * @var array Relations
+     */
+    public $morphMany = [
+        'revision_history' => ['System\Models\Revision', 'name' => 'revisionable']
+    ];
+
+    
+}
