@@ -1,0 +1,10 @@
+name: TravelAssignments
+form: $/dojo/pukju/models/travelassignments/fields.yaml
+modelClass: Dojo\Pukju\Models\TravelAssignments
+defaultRedirect: dojo/pukju/travelassignments
+create:
+    redirect: 'dojo/pukju/travelassignments/update/:id'
+    redirectClose: dojo/pukju/travelassignments
+update:
+    redirect: dojo/pukju/travelassignments
+    redirectClose: dojo/pukju/travelassignments

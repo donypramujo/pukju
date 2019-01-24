@@ -1,0 +1,15 @@
+columns:
+    id:
+        label: 'dojo.pukju::lang.ta.id'
+        type: number
+    booking_order[event_name]:
+        label: 'dojo.pukju::lang.bo.event_name'
+        type: text
+    driver[name]:
+        label: 'dojo.pukju::lang.driver.name'
+        type: text
+    bus[police_number]:
+        label: 'dojo.pukju::lang.bus.police_number'
+        type: text
+    
+        

@@ -27,6 +27,10 @@ class BuilderTableCreateDojoPukjuTravelAssignments extends Migration
             $table->foreign('driver_id')->references('id')->on('dojo_pukju_drivers');
 
 
+            $table->integer('bus_id')->unsigned()->nullable();
+            $table->foreign('bus_id')->references('id')->on('dojo_pukju_buses');
+
+
         });
     }
     

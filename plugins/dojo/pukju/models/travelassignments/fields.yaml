@@ -1,0 +1,24 @@
+fields:
+    booking_order:
+        label: Booking Order x
+        span: full
+        path: field_booking_orders
+        type: partial
+    driver:
+        label: 'dojo.pukju::lang.driver.singular'
+        nameFrom: name
+        descriptionFrom: phone_number
+        prompt: 'dojo.pukju::lang.driver.record_finder'
+        list: $/dojo/pukju/models/customer/columns.yaml
+        span: full
+        required: 1
+        type: recordfinder
+    bus:
+        label: 'dojo.pukju::lang.bus.singular'
+        nameFrom: police_number
+        descriptionFrom: code
+        prompt: 'dojo.pukju::lang.bus.record_finder'
+        list: $/dojo/pukju/models/customer/columns.yaml
+        span: full
+        required: 1
+        type: recordfinder

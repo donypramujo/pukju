@@ -21,8 +21,10 @@
         'phone_number' => 'Phone Number',
         'id' => 'Driver Id',
         'plural' => 'Drivers',
+        'singular' => 'Driver',
         'address' => 'Address',
         'balances' => 'Driver Balances',
+        'record_finder' => 'Click the %s button to find a driver',
     ],
     'bus_type' => [
         'id' => 'Bus Type Id',
@@ -50,6 +52,7 @@
         'police_number' => 'Police Number',
         'code' => 'Bus Code',
         'ordered' => 'Ordered Buses',
+        'record_finder' => 'Click the %s button to find a bus',
     ],
     'destination' => [
         'plural' => 'Destinations',
@@ -85,6 +88,7 @@
     ],
     'ta' => [
         'plural' => 'Travel Assignments',
+        'id' => 'Id'
     ],
     'trx' => [
         'tab' => 'Transaction',

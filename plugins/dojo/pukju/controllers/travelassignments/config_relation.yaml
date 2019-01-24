@@ -1,0 +1,8 @@
+booking_order:
+    label: Booking Order x
+    view:
+        form: $/dojo/pukju/models/bookingorder/short_fields.yaml
+        toolbarButtons: link|unlink
+    manage:
+        form: $/dojo/pukju/models/bookingorder/short_fields.yaml
+        list: $/dojo/pukju/models/bookingorder/columns.yaml

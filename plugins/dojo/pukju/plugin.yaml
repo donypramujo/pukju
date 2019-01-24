@@ -71,8 +71,10 @@ navigation:
             - access_booking_orders
     travel-assignments:
         label: 'dojo.pukju::lang.ta.plural'
-        url: /
+        url: dojo/pukju/travelassignments
         icon: icon-life-ring
+        permissions:
+            - access_travel_assignments
     transaction:
         label: 'dojo.pukju::lang.transaction.singular'
         url: dojo/pukju/driverbalancetypes
@@ -81,4 +83,8 @@ navigation:
             driver-balances:
                 label: 'dojo.pukju::lang.driver.balances'
                 url: dojo/pukju/driverbalancetypes
+                icon: icon-sitemap
+            dri:
+                label: 'Menu Item'
+                url: /
                 icon: icon-sitemap
