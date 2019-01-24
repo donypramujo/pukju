@@ -15,7 +15,7 @@ class BookingOrders extends Controller
     public $formConfig = 'config_form.yaml';
     public $relationConfig = 'config_relation.yaml';
 
-    public $bodyClass = 'compact-container';
+    //public $bodyClass = 'compact-container';
 
     public $requiredPermissions = [
         'access_booking_orders'
