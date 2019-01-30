@@ -5,7 +5,7 @@ use BackendMenu;
 use Illuminate\Support\Facades\DB;
 use Dojo\Pukju\Models\Bus;
 use Dojo\Pukju\Models\BusType;
-use Dojo\Pukju\Models\ViewsBus;
+use Dojo\Pukju\Models\ViewBus;
 
 class Buses extends Controller
 {
@@ -24,14 +24,7 @@ class Buses extends Controller
         BackendMenu::setContext('Dojo.Pukju', 'master', 'buses');
 
 
-        $buses = ViewsBus::get();
-
-
-
-        $busTypes = BusType::get();
-        foreach($busTypes as $busType){
-            $this->vars['busTypes'][$busType->id] = $busType->name;
-        }
+        $buses = ViewBus::get();
 
         $this->vars['buses'] = $buses;
     }

@@ -9,7 +9,7 @@
     - builder_table_create_dojo_pukju_booking_order_buses.php
     - builder_table_create_dojo_pukju_travel_assignments.php
     - builder_table_create_dojo_pukju_charges.php
-    - builder_table_create_dojo_pukju_views_buses.php
+    - builder_table_create_dojo_pukju_views.php
     - builder_table_create_dojo_pukju_driver_balance_types.php  
     - builder_table_create_dojo_pukju_driver_balances.php  
     

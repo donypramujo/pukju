@@ -4,7 +4,7 @@ fields:
         nameFrom: name
         descriptionFrom: description
         prompt: 'dojo.pukju::lang.bus_type.record_finder'
-        list: $/dojo/pukju/models/viewsbus/columns.yaml
+        list: $/dojo/pukju/models/viewbus/columns.yaml
         span: full
         required: 1
         type: recordfinder

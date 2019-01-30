@@ -26,6 +26,6 @@ class BookingOrderBus extends Model
 
     public $belongsTo = [
         'booking_order' => 'Dojo\Pukju\Models\BookingOrder',
-        'bus_type' => 'Dojo\Pukju\Models\ViewsBus'
+        'bus_type' => 'Dojo\Pukju\Models\ViewBus'
     ];
 }

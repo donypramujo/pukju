@@ -1,0 +1,16 @@
+<div id="list">
+    <?= $this->listRender() ?>
+</div>
+
+<script type="text/javascript">
+$('#Lists').on('ajaxUpdate', function() {
+    $.request('onViewSum', {
+        update: {'view_sum': '#view_sum'}
+    })
+})
+$( document ).ready(function() {
+    $.request('onViewSum', {
+        update: {'view_sum': '#view_sum'}
+    })
+});
+</script>

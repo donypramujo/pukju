@@ -1,0 +1,25 @@
+<div class="scoreboard">
+    <div data-control="toolbar">
+        <h3>Sisa Bus </h3>
+        <div class="scoreboard-item control-chart" data-control="chart-pie">
+            <ul>
+                <?php foreach ($view_buses as $view_bus): ?>
+                    <li>
+                        <?= $view_bus->name ?>
+                        <span>
+                            <?php
+                               $total_bus = 
+                                    $view_bus->bus_count-
+                                    (empty($sum_rows[$view_bus->id])?0:$sum_rows[$view_bus->id])
+                            ?>
+                            <?=
+                                $total_bus<0?0:$total_bus;
+                            ?>
+                        </span>
+                    </li>
+                <?php endforeach ?>
+
+            </ul>
+        </div>
+    </div>
+</div>

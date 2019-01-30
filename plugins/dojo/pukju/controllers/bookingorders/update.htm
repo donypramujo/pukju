@@ -7,13 +7,10 @@
 
 <?php if (!$this->fatalError): ?>
 
-     <?php Block::put('form-contents') ?>
+    <?= Form::open(['class' => 'layout']) ?>
 
-        <div class="layout-row min-size">
-            <?= $this->formRenderOutsideFields() ?>
-        </div>
         <div class="layout-row">
-            <?= $this->formRenderPrimaryTabs() ?>
+            <?= $this->formRender() ?>
         </div>
 
         <div class="form-buttons">
@@ -49,26 +46,9 @@
                 </span>
             </div>
         </div>
-    <?php Block::endPut() ?>
-	
-	<!-- Complimentary sidebar -->
-	<?php Block::put('form-sidebar') ?>
-	     <div class="hide-tabs"><?= $this->formRenderSecondaryTabs() ?></div>
-	<?php Block::endPut() ?>
-	
-	<!-- Layout execution -->
-	<?php Block::put('body') ?>
-	    <?= Form::open(['class'=>'layout stretch']) ?>
-	        <?= $this->makeLayout('form-with-sidebar') ?>
-	    <?= Form::close() ?>
-	<?php Block::endPut() ?>
+    <?= Form::close() ?>
 
 <?php else: ?>
-    <div class="control-breadcrumb">
-        <?= Block::placeholder('breadcrumb') ?>
-    </div>
-    <div class="padded-container">
-    	<p class="flash-message static error"><?= e(trans($this->fatalError)) ?></p>
-    	<p><a href="<?= Backend::url('dojo/pukju/bookingorders') ?>" class="btn btn-default"><?= e(trans('backend::lang.form.return_to_list')) ?></a></p>
-    </div>
+    <p class="flash-message static error"><?= e(trans($this->fatalError)) ?></p>
+    <p><a href="<?= Backend::url('dojo/pukju/bookingorders') ?>" class="btn btn-default"><?= e(trans('backend::lang.form.return_to_list')) ?></a></p>
 <?php endif ?>

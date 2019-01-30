@@ -1,0 +1,5 @@
+scopes:
+    from_date:
+        label: 'dojo.pukju::lang.bo.date'
+        type: daterange
+        conditions: from_date <= ':before' and to_date >= ':after'

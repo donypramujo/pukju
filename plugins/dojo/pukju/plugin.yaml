@@ -88,3 +88,7 @@ navigation:
                 label: 'Menu Item'
                 url: /
                 icon: icon-sitemap
+    main-menu-item:
+        label: 'Stock Bus'
+        url: dojo/pukju/orderedbuses
+        icon: icon-life-ring

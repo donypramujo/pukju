@@ -3,6 +3,9 @@
         'name' => 'Putra KJU',
         'description' => 'Putra KJU',
     ],
+    'format' =>[
+        'date' => 'j M Y'
+    ],
     'master' => [
         'tab' => 'Master Data',
         'access_drivers' => 'Manage the drivers',
@@ -68,6 +71,9 @@
         'from_date' => 'From Date',
         'to_date' => 'To Date',
         'event_name' => 'Event Name',
+        'basic_info' =>'Basic Info',
+        'pickup_info' => 'Pickup Info',
+        'date' => 'Date'
     ],
     'loa' => [
     ],

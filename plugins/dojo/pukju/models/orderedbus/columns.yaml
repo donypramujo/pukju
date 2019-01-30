@@ -1,0 +1,23 @@
+columns:
+    booking_order_id:
+        label: 'dojo.pukju::lang.bo.id'
+        relation: booking_order
+        select: id
+    booking_order_id:
+        label: 'dojo.pukju::lang.bo.event_name'
+        relation: booking_order
+        select: event_name
+        searchable: true
+    bus_type_id:
+        label: 'dojo.pukju::lang.bus_type.singular'
+        relation: bus_type
+        select: name
+    bus_order_count:
+        label: 'dojo.pukju::lang.bus_type.order_count'
+        type: number
+    from_date:
+        label: 'dojo.pukju::lang.bo.from_date'
+        type: date
+    to_date:
+        label: 'dojo.pukju::lang.bo.to_date'
+        type: date

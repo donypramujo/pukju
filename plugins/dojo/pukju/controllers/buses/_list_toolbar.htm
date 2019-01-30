@@ -3,7 +3,7 @@
         <div class="scoreboard-item control-chart" data-control="chart-pie">
             <ul>
                 <?php foreach ($buses as $bus): ?>
-                    <li><?= $busTypes[$bus->id] ?><span><?= $bus->bus_count ?></span></li>
+                    <li><?= $bus->name ?><span><?= $bus->bus_count ?></span></li>
                 <?php endforeach ?>
             </ul>
         </div>
