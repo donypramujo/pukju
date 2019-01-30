@@ -7,58 +7,60 @@ tabs:
     fields:
         event_name:
             label: 'dojo.pukju::lang.bo.event_name'
-            span: full
+            span: left
             placeholder: 'dojo.pukju::lang.bo.event_name'
             type: text
-            tab: dojo.pukju::lang.bo.basic_info
+            tab: 'dojo.pukju::lang.bo.basic_info'
         from_date:
             label: 'dojo.pukju::lang.bo.from_date'
             mode: date
             span: left
             type: datepicker
-            tab: dojo.pukju::lang.bo.basic_info
+            tab: 'dojo.pukju::lang.bo.basic_info'
         to_date:
             label: 'dojo.pukju::lang.bo.to_date'
             mode: date
-            span: right
+            span: left
             type: datepicker
-            tab: dojo.pukju::lang.bo.basic_info
+            tab: 'dojo.pukju::lang.bo.basic_info'
         customer:
             label: 'dojo.pukju::lang.customer.singular'
             nameFrom: name
             descriptionFrom: email
             prompt: 'dojo.pukju::lang.customer.record_finder'
             list: $/dojo/pukju/models/customer/columns.yaml
-            span: full
+            span: left
             required: 1
             type: recordfinder
-            tab: dojo.pukju::lang.bo.basic_info
+            tab: 'dojo.pukju::lang.bo.basic_info'
         destination:
             label: 'dojo.pukju::lang.destination.singular'
             nameFrom: name
+            descriptionFrom: description
             prompt: 'dojo.pukju::lang.destination.record_finder'
             list: $/dojo/pukju/models/destination/columns.yaml
-            span: full
+            span: left
             required: 1
             type: recordfinder
-            tab: dojo.pukju::lang.bo.basic_info
+            tab: 'dojo.pukju::lang.bo.basic_info'
         pickup_hour:
             label: 'dojo.pukju::lang.pickup.hour'
             mode: time
             span: left
             type: datepicker
-            tab: dojo.pukju::lang.bo.pickup_info
+            tab: 'dojo.pukju::lang.bo.pickup_info'
         pickup_phone_number:
             label: 'dojo.pukju::lang.pickup.phone_number'
             span: left
             placeholder: 'dojo.pukju::lang.pickup.phone_number'
             type: text
-            tab: dojo.pukju::lang.bo.pickup_info
+            tab: 'dojo.pukju::lang.bo.pickup_info'
         pickup_address:
             label: 'dojo.pukju::lang.pickup.address'
-            span: full
+            size: large
+            span: left
             type: textarea
-            tab: dojo.pukju::lang.bo.pickup_info
+            tab: 'dojo.pukju::lang.bo.pickup_info'
         buses:
             span: full
             path: field_buses
@@ -66,7 +68,7 @@ tabs:
                 - update
                 - preview
             type: partial
-            tab: 'dojo.pukju::lang.bus.ordered'
+            tab: 'dojo.pukju::lang.bus.plural'
         charges:
             span: full
             path: field_charges
@@ -74,5 +76,5 @@ tabs:
                 - update
                 - preview
             type: partial
-            tab: 'dojo.pukju::lang.charge.per_bus'
+            tab: 'dojo.pukju::lang.bus.plural'
    

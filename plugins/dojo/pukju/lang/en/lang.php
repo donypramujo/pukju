@@ -56,6 +56,8 @@
         'code' => 'Bus Code',
         'ordered' => 'Ordered Buses',
         'record_finder' => 'Click the %s button to find a bus',
+        'price' => 'Price',
+        'total_price' => 'Total Price',
     ],
     'destination' => [
         'plural' => 'Destinations',

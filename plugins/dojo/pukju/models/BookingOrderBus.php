@@ -20,12 +20,17 @@ class BookingOrderBus extends Model
     /**
      * @var array Validation rules
      */
-    public $rules = [
-    ];
+    public $rules = [];
 
 
     public $belongsTo = [
         'booking_order' => 'Dojo\Pukju\Models\BookingOrder',
         'bus_type' => 'Dojo\Pukju\Models\ViewBus'
     ];
+
+    //before the model is saved, either created or updated.
+    public function beforeSave()
+    {
+        $this->total_price = $this->price * $this->quantity;
+    }
 }

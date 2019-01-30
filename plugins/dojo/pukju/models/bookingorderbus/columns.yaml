@@ -8,4 +8,11 @@ columns:
     quantity:
         label: 'dojo.pukju::lang.bus_type.qty'
         type: number
-        sortable: true
+    price:
+        label: 'dojo.pukju::lang.bus.price'
+        type: number
+        format: Rp%.0f
+    total_price:
+        label: 'dojo.pukju::lang.bus.total_price'
+        type: number
+        format: Rp%.0f

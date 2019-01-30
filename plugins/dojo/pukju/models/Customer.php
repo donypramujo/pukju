@@ -47,6 +47,6 @@ class Customer extends Model
         'name' => 'required|between:1,100',
         'phone_number' => 'required|numeric',
         'birth_of_date' => 'required|date',
-        'email' => 'required|email',
+        'email' => 'email',
     ];
 }

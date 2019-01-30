@@ -14,3 +14,9 @@ fields:
         placeholder: 'dojo.pukju::lang.bus_type.qty'
         required: 1
         type: number
+    price:
+        label: 'dojo.pukju::lang.bus.price'
+        span: full
+        placeholder: 'dojo.pukju::lang.bus_type.qty'
+        required: 1
+        type: number

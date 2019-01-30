@@ -20,7 +20,7 @@ class BuilderTableCreateDojoPukjuBookingOrders extends Migration
             $table->integer('destination_id')->unsigned()->nullable();
             $table->foreign('destination_id')->references('id')->on('dojo_pukju_destinations');
 
-            $table->string('event_name');
+            $table->string('event_name',100);
 
             $table->date('from_date');
             $table->date('to_date');
