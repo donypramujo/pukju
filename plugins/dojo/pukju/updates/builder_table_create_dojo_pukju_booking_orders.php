@@ -29,7 +29,11 @@ class BuilderTableCreateDojoPukjuBookingOrders extends Migration
             $table->text('pickup_address');
             $table->time('pickup_hour');
             $table->string('pickup_phone_number');
+
             $table->decimal('booking_fee',15,2);
+
+            $table->boolean('confirmed');
+            $table->boolean('completed');
 
         });
     }

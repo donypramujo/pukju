@@ -8,9 +8,9 @@ fields:
         span: full
         required: 1
         type: recordfinder
-    bus_order_count:
-        label: 'dojo.pukju::lang.bus_type.order_count'
+    quantity:
+        label: 'dojo.pukju::lang.bus_type.qty'
         span: full
-        placeholder: 'dojo.pukju::lang.bus_type.order_count'
+        placeholder: 'dojo.pukju::lang.bus_type.qty'
         required: 1
         type: number

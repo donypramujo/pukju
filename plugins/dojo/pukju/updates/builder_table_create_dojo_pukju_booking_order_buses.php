@@ -24,9 +24,13 @@ class BuilderTableCreateDojoPukjuBookingOrderBuses extends Migration
             $table->foreign('bus_type_id')->references('id')
                     ->on('dojo_pukju_bus_types');
 
-            $table->integer('bus_order_count');
+            $table->integer('quantity');
 
+            $table->decimal('price',15,2);
 
+            $table->decimal('total_price',15,2);
+
+            $table->unique(['booking_order_id', 'bus_type_id'],'bb');
         });
     }
     

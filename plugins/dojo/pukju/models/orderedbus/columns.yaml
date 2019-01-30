@@ -12,8 +12,8 @@ columns:
         label: 'dojo.pukju::lang.bus_type.singular'
         relation: bus_type
         select: name
-    bus_order_count:
-        label: 'dojo.pukju::lang.bus_type.order_count'
+    quantity:
+        label: 'dojo.pukju::lang.bus_type.qty'
         type: number
     from_date:
         label: 'dojo.pukju::lang.bo.from_date'

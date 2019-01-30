@@ -40,8 +40,8 @@ class OrderedBuses extends Controller
     public function listExtendQuery($query, $definition = null)
     {
         $copy_query = clone $query;
-        $sum_rows = $copy_query->select(DB::raw('SUM(bus_order_count) AS bus_order_sum, bus_type_id'))
-        ->groupBy('bus_type_id')->pluck('bus_order_sum','bus_type_id') ;
+        $sum_rows = $copy_query->select(DB::raw('SUM(quantity) AS sum_qty, bus_type_id'))
+        ->groupBy('bus_type_id')->pluck('sum_qty','bus_type_id') ;
 
         Session::put('sum_rows', $sum_rows);
     }

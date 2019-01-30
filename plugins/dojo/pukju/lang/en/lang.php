@@ -35,7 +35,7 @@
         'singular' => 'Bus Type',
         'count' => 'Count Bus',
         'plural' => 'Bus Types',
-        'order_count' => 'Bus Order Count',
+        'qty' => 'Quantity',
         'record_finder' => 'Click the %s button to find a bus type',
     ],
     'customer' => [
